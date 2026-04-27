@@ -1,0 +1,8 @@
+# Build artifacts
+*.vcd
+*_sim
+*.out
+
+# Editor
+.vscode/
+*.swp
