@@ -1,8 +1,6 @@
 #!/bin/bash
-# Rulează verible-verilog-lint pe toate fișierele .v din repo
-ROOT="$(cd "$(dirname "$0")" && pwd)"
+find . -name "*.v" -exec verible-verilog-lint {} \;
 
-find "$ROOT" -name "*.v" | sort | while read -r file; do
-    echo "--- $file"
-    verible-verilog-lint "$file"
-done
+#Acest script este un tool care ne spune daca fisierele Verilog 
+#au probleme de calitate sau pericole, probleme care nu ar aparea
+#atunci cand am simula circuitul

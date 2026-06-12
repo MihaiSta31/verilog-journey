@@ -1,5 +1,6 @@
 # Build artifacts
 *.vcd
+*.vvp
 *_sim
 *.out
 
